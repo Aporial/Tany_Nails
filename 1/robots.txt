@@ -1,3 +1,0 @@
-User-agent: *
-
-Sitemap: https://tany-nails.pp.ua/sitemap.xml
