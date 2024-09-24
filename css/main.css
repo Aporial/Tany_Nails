@@ -14,7 +14,7 @@ body {
   height: 100vh;
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
-  /* background-color: #8e5ce1; */
+  background-color: #ff6666;
   /* background: radial-gradient(circle, #fdce3b, #f2a301); */
   /* background: radial-gradient(circle, #ffcc66, #ff6666); */
   /* background: radial-gradient(circle, #ff6666, #ffcc66); */
@@ -133,6 +133,7 @@ a {
 }
 
 .main_tita img {
+  cursor: pointer;
   width: 100%;
   border-radius: 15px;
   /* border: 3px solid #ffffff; */

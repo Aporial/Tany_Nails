@@ -29,20 +29,6 @@
     <link rel="icon" href="/favicon/favicon.ico" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/main.css" />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-T1G0Q6BMJ2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag('js', new Date())
-
-      gtag('config', 'G-T1G0Q6BMJ2')
-    </script>
   </head>
   <header>
     <div class="container">
@@ -78,7 +64,11 @@
     </p>
     <div class="container main_container">
       <div id="main_tita" class="main_tita">
-        <img src="/src/tita.webp" alt="Тетяна Фесенко" />
+        <img
+          src="/src/tita.webp"
+          alt="Тетяна Фесенко"
+          onclick="openFullscreen(this)"
+        />
         <h2>Тетяна Фесенко</h2>
         <h4>МАЙСТЕР МАНІКЮРУ</h4>
       </div>
@@ -294,11 +284,7 @@
           />
         </div>
         <div class="img_cont">
-          <img
-            class="example_images"
-            src="/src/nails/photo_20.webp"
-            alt="4"
-          />
+          <img class="example_images" src="/src/nails/photo_20.webp" alt="4" />
         </div>
         <div class="img_cont">
           <img
