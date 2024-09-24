@@ -31,6 +31,7 @@ function closeFullscreen() {
 function toggleMenu() {
   const menu = document.getElementById('mobile-menu')
   menu.classList.toggle('show') // Додаємо/видаляємо клас show
+  document.body.classList.add('no-scroll') // Додаємо клас для блокування прокручування
 }
 
 // Додаємо обробник подій для закриття меню при натисканні на пункт
@@ -38,5 +39,6 @@ document.querySelectorAll('.menu-item').forEach((item) => {
   item.addEventListener('click', () => {
     const menu = document.getElementById('mobile-menu')
     menu.classList.remove('show') // Видаляємо клас show
+    document.body.classList.remove('no-scroll') // Відновлюємо прокручування
   })
 })
