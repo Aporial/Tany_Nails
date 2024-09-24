@@ -222,8 +222,12 @@ a {
   .menu-toggle {
     display: flex;
   }
+  .nav_bar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+  }
   .logo {
-    margin: 0;
+    width: 60px;
   }
   .nav_button {
     display: none;

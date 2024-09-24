@@ -6,9 +6,12 @@
 }
 
 .logo {
+  margin-right: auto;
+}
+
+.logo img {
   width: 90px;
   border-radius: 50%;
-  margin-right: auto;
   border: 2px solid #ffffff;
 }
 
@@ -39,10 +42,8 @@
 }
 
 .nav_button:hover {
-  /* color: black; */
   transform: scale(1.05);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  /* background: #f8b719; */
 }
 
 /* Меню для мобільної версії */
@@ -77,7 +78,7 @@
 
 .menu-toggle {
   display: none;
-  font-size: 40px; /* Розмір символу меню */
+  font-size: 50px; /* Розмір символу меню */
   cursor: pointer; /* Змінюємо курсор на pointer */
   padding: 8px; /* Внутрішні відступи */
   /* border-radius: 15px; */
