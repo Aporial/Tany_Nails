@@ -1,0 +1,98 @@
+.nav_bar {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 90px;
+  border-radius: 50%;
+  margin-right: auto;
+  border: 2px solid #ffffff;
+}
+
+.button {
+  margin-left: auto;
+  font-weight: 500;
+  color: #ffffff;
+  /* background: #da8a00; */
+  padding: 15px;
+  border-radius: 25px;
+  border: 2px solid #ffffff;
+  transition: all 500ms ease;
+}
+
+.button:hover {
+  /* color: black; */
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  /* background: #f8b719; */
+}
+
+.nav_button {
+  /* background-color: #da8a00; */
+  padding: 15px;
+  border-radius: 25px;
+  border: 2px solid #ffffff;
+  transition: all 500ms ease;
+}
+
+.nav_button:hover {
+  /* color: black; */
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  /* background: #f8b719; */
+}
+
+/* Меню для мобільної версії */
+
+.mobile-menu {
+  display: none; /* Сховуємо меню за замовчуванням */
+  position: fixed; /* Фіксоване положення */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Напівпрозорий фон */
+  z-index: 999; /* Виводимо поверх інших елементів */
+  justify-content: center; /* Вирівнюємо по центру */
+  align-items: center;
+}
+
+.mobile-menu ul {
+  list-style: none; /* Прибираємо маркери */
+  text-align: center; /* Центруємо текст */
+}
+
+.mobile-menu li {
+  margin: 20px 0; /* Відстань між пунктами меню */
+}
+
+.mobile-menu a {
+  color: white; /* Колір тексту */
+  font-size: 24px; /* Розмір шрифту */
+  text-decoration: none; /* Прибираємо підкреслення */
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 50px; /* Розмір символу меню */
+  cursor: pointer; /* Змінюємо курсор на pointer */
+  padding: 8px; /* Внутрішні відступи */
+  /* border-radius: 15px; */
+  /* border: 3px solid #ffffff; */
+}
+
+/* Клас для відображення меню */
+.show {
+  display: flex; /* Показуємо меню */
+}
+
+.menu-item {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 15px;
+  border: 3px solid #ffffff;
+}

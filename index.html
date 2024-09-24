@@ -27,6 +27,7 @@
     />
     <link rel="manifest" href="/favicon/site.webmanifest" />
     <link rel="icon" href="/favicon/favicon.ico" />
+    <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/main.css" />
     <!-- Google tag (gtag.js) -->
     <script
@@ -43,86 +44,608 @@
       gtag('config', 'G-T1G0Q6BMJ2')
     </script>
   </head>
+  <header>
+    <div class="container">
+      <div class="nav_bar">
+        <img class="logo" src="/src/image.png" alt="logo" />
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <nav id="mobile-menu" class="mobile-menu">
+          <ul>
+            <li><a href="#main_tita" class="menu-item">Про майстра</a></li>
+            <li><a href="#time_text" class="menu-item">Графік роботи</a></li>
+            <li><a href="#main_price" class="menu-item">Ціна</a></li>
+            <li><a href="#social_links" class="menu-item">Соцмережі</a></li>
+            <li><a href="#my_examples" class="menu-item">Мої роботи</a></li>
+          </ul>
+        </nav>
+        <a href="#main_tita" class="nav_button">Про майстра</a>
+        <a href="#time_text" class="nav_button">Графік роботи</a>
+        <a href="#main_price" class="nav_button">Ціна</a>
+        <a href="#social_links" class="nav_button">Соцмережі</a>
+        <a href="#my_examples" class="nav_button">Мої роботи</a>
+        <a href="https://t.me/Tanytia" class="button" target="_blank"
+          >Записатись</a
+        >
+      </div>
+    </div>
+  </header>
   <body>
-    <h1 style="display: none">Tany Nails - МАЙСТЕР МАНІКЮРУ</h1>
+    <h1 style="display: none">Tany Nails - Майстер Манікюру</h1>
     <p style="display: none">
-      Запрошуємо вас до професійного майстра манікюру в Сумах! Пропонуємо
-      широкий спектр послуг: класичний манікюр, гелеве покриття, дизайн нігтів
-      та багато іншого. Використовуємо тільки якісні матеріали та сучасні
-      техніки. Індивідуальний підхід до кожного клієнта, щоб підкреслити вашу
-      унікальність і стиль. Відвідайте нас для ідеального манікюру!
+      Запрошуємо вас до професійного майстра манікюру в Сумах! Індивідуальний
+      підхід до кожного клієнта, щоб підкреслити вашу унікальність і стиль.
+      Відвідайте нас для ідеального манікюру!
     </p>
-    <header>
-      <div class="container">
-        <div class="nav_bar">
-          <img class="logo" src="/src/image.png" alt="logo" />
-          <a href="/" class="home active">Головна</a>
-          <a href="/about.html" class="example">Мої роботи</a>
-          <a href="https://t.me/Tanytia" class="button" target="_blank"
-            >Записатись</a
-          >
-        </div>
-      </div>
-    </header>
     <div class="container main_container">
-      <div class="left_container">
-        <div class="main_tita">
-          <img src="/src/tita.webp" alt="Тетяна Фесенко" />
-          <h2>Тетяна Фесенко</h2>
-          <h4>МАЙСТЕР МАНІКЮРУ</h4>
-        </div>
+      <div id="main_tita" class="main_tita">
+        <img src="/src/tita.webp" alt="Тетяна Фесенко" />
+        <h2>Тетяна Фесенко</h2>
+        <h4>МАЙСТЕР МАНІКЮРУ</h4>
       </div>
-      <div class="center_container">
-        <div class="main_text">
-          <h2>✨ Мої переваги ✨</h2>
-          <ul>
-            <li>· Індивідуальний підхід до кожного клієнта</li>
-            <li>· Тільки найкращі матеріали та лаки</li>
-            <li>· Широкий вибір дизайнів і модних трендів</li>
-            <li>· Виконання дизайнів будь-якої складності</li>
-            <li>· Приємна розмова та проведений час</li>
-            <li>· Приємний бонус в кінці манікюру</li>
-          </ul>
-        </div>
-        <div class="main_price">
-          <ul>
-            <h3>Гігієнічний манікюр</h3>
-            <li>· Манікюр 150₴</li>
-            <li>· Покриття лаком 200₴</li>
-            <h3>Манікюр та вирівнювання</h3>
-            <li>· Корекція 350₴</li>
-            <li>· Повна процедура 400₴</li>
-            <li>· +30₴ від 3 розміру</li>
-            <h3>Манікур та нарощування</h3>
-            <li>· Корекція 450₴</li>
-            <li>· Повна процедура 500₴</li>
-            <li>· +30₴ від 3 розміру</li>
-            <h3>Дизайн</h3>
-            <li class="dis">· Наклейка 2₴</li>
-            <li class="dis">· Фігурка 2₴</li>
-            <li class="dis">· Ліплення 5₴</li>
-          </ul>
-        </div>
+      <div class="main_text">
+        <h2>✨ Мої переваги ✨</h2>
+        <ul>
+          <li>· Індивідуальний підхід до кожного клієнта</li>
+          <li>· Тільки найкращі матеріали та лаки</li>
+          <li>· Широкий вибір дизайнів і модних трендів</li>
+          <li>· Виконання дизайнів будь-якої складності</li>
+          <li>· Приємна розмова та проведений час</li>
+          <li>· Приємний бонус в кінці манікюру</li>
+        </ul>
       </div>
-      <div class="right_container">
-        <div class="time_text">
-          <h2>Графік роботи</h2>
-          <ul>
-            <li>Пн-Пт: 09:30-18:00</li>
-            <li>Сб-Нд: Вихідні</li>
-          </ul>
+      <div id="time_text" class="time_text">
+        <h2>Графік роботи</h2>
+        <ul>
+          <li>Пн-Пт: 09:30-18:00</li>
+          <li>Сб-Нд: Вихідні</li>
+        </ul>
+      </div>
+      <div id="main_price" class="main_price">
+        <ul>
+          <h3>Гігієнічний манікюр</h3>
+          <li>· Манікюр 150₴</li>
+          <li>· Покриття лаком 200₴</li>
+          <h3>Манікюр та вирівнювання</h3>
+          <li>· Корекція 350₴</li>
+          <li>· Повна процедура 400₴</li>
+          <li>· +30₴ від 3 розміру</li>
+          <h3>Манікур та нарощування</h3>
+          <li>· Корекція 450₴</li>
+          <li>· Повна процедура 500₴</li>
+          <li>· +30₴ від 3 розміру</li>
+          <h3>Дизайн</h3>
+          <li class="dis">· Наклейка 2₴</li>
+          <li class="dis">· Фігурка 2₴</li>
+          <li class="dis">· Ліплення 5₴</li>
+        </ul>
+      </div>
+      <div id="social_links" class="social_links">
+        <a href="https://www.instagram.com/tany._nails/" target="_blank"
+          >Instagram</a
+        >
+        <a href="https://www.tiktok.com/@tany._nails" target="_blank">TikTok</a>
+        <a href="https://t.me/Tanytia" target="_blank">Telegram</a>
+        <a href="tel:+380957837563">Зателефонувати</a>
+      </div>
+      <h2 id="my_examples" class="my_examples">Мої роботи</h2>
+      <div
+        id="fullscreen-container"
+        class="fullscreen-container"
+        onclick="closeFullscreen()"
+      >
+        <img
+          id="fullscreen-image"
+          class="fullscreen-image"
+          src=""
+          alt="Fullscreen Image"
+        />
+      </div>
+      <div class="example_container">
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_1.webp"
+            alt="1"
+            onclick="openFullscreen(this)"
+          />
         </div>
-        <div class="social_links">
-          <a href="https://www.instagram.com/tany._nails/" target="_blank"
-            >Instagram</a
-          >
-          <a href="https://www.tiktok.com/@tany._nails" target="_blank"
-            >TikTok</a
-          >
-          <a href="https://t.me/Tanytia" target="_blank">Telegram</a>
-          <a href="tel:+380957837563">Зателефонувати</a>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_2.webp"
+            alt="3"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_3.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_4.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_5.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_6.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_7.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_8.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_9.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_10.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_11.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_12.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_13.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_14.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_15.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_16.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_17.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_18.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_19.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_20.webp"
+            alt="4"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_21.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_22.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_23.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_24.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_25.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_26.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_27.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_28.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_29.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_30.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_31.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_32.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_33.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_34.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_35.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_36.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_37.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_38.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_39.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_40.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_41.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_42.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_43.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_44.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_45.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_46.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_47.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_48.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_49.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_50.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_51.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_52.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_53.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_54.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_55.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_56.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_57.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_58.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_59.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_60.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_61.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_62.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
+        </div>
+        <div class="img_cont">
+          <img
+            class="example_images"
+            src="/src/nails_new/photo_63.webp"
+            alt="4"
+            onclick="openFullscreen(this)"
+          />
         </div>
       </div>
     </div>
+    <script src="/script.js"></script>
   </body>
 </html>
