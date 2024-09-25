@@ -192,7 +192,10 @@ a {
   /* text-align: center; */
 }
 
-.social_links img {
+.instagram,
+.tiktok,
+.telegram,
+.call {
   max-width: 70px;
 }
 
@@ -292,14 +295,17 @@ a {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
   }
-  .logo img {
+  .logo_img {
     width: 60px;
   }
   .nav_button {
     display: none;
   }
-  .social_links img{
-    max-width: 55px;
+  .instagram,
+  .tiktok,
+  .telegram,
+  .call {
+    max-width: 70px;
   }
   .social_links p {
     display: none;

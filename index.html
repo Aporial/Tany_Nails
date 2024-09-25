@@ -27,8 +27,8 @@
     />
     <link rel="manifest" href="/favicon/site.webmanifest" />
     <link rel="icon" href="/favicon/favicon.ico" />
-    <link rel="stylesheet" href="/css/header.css" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/header.css?v=1.0" />
+    <link rel="stylesheet" href="/css/main.css?v=1.0" />
   </head>
   <header>
     <div class="container">
@@ -43,7 +43,9 @@
             <li><a href="#my_examples" class="menu-item">Мої роботи</a></li>
           </ul>
         </nav>
-        <a class="logo" href="/"><img src="/src/image.png" alt="logo" /></a>
+        <a class="logo" href="/"
+          ><img class="logo_img" src="/src/image.png" alt="logo"
+        /></a>
         <a href="#main_tita" class="nav_button">Про майстра</a>
         <a href="#time_text" class="nav_button">Графік роботи</a>
         <a href="#main_price" class="nav_button">Ціна</a>
@@ -64,7 +66,9 @@
     </p>
     <div id="preloader" class="preloader">
       <div class="pulsating-logo">
-        <div class="logo"><img src="/src/image.png" alt="logo" /></div>
+        <div class="logo">
+          <img class="logo_img" src="/src/image.png" alt="logo" />
+        </div>
       </div>
     </div>
     <div id="container" class="container main_container">
@@ -116,27 +120,31 @@
       </div>
       <div id="social_links" class="social_links">
         <a href="https://www.instagram.com/tany._nails/" target="_blank"
-          ><img src="/src/social_links/instagram.png" alt="Instagram Link" />
+          ><img
+            class="instagram"
+            src="/src/social_links/instagram.png"
+            alt="Instagram Link"
+          />
           <p>Instagram</p></a
         >
         <a href="https://www.tiktok.com/@tany._nails" target="_blank"
           ><img
-            src="src/social_links/tiktok.png"
-            alt="TikTok Link"
             class="tiktok"
+            src="/src/social_links/tiktok.png"
+            alt="TikTok Link"
           />
           <p>TikTok</p></a
         >
         <a href="https://t.me/Tanytia" target="_blank"
           ><img
-            src="src/social_links/telegram.png"
-            alt="Telegram Link"
             class="telegram"
+            src="/src/social_links/telegram.png"
+            alt="Telegram Link"
           />
           <p>Telegram</p></a
         >
         <a href="tel:+380957837563"
-          ><img src="src/social_links/call.png" alt="Call" class="call" />
+          ><img class="call" src="/src/social_links/call.png" alt="Call" />
           <p>Зателефонувати</p></a
         >
       </div>
@@ -655,6 +663,6 @@
         </div>
       </div>
     </div>
-    <script src="/script.js"></script>
+    <script src="/script.js?v=1.0"></script>
   </body>
 </html>
