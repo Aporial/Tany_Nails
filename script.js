@@ -42,3 +42,23 @@ document.querySelectorAll('.menu-item').forEach((item) => {
     document.body.classList.remove('no-scroll') // Відновлюємо прокручування
   })
 })
+
+window.addEventListener('load', function () {
+  const preloader = document.getElementById('preloader')
+  const content = document.getElementById('container')
+
+  // Затримка перед показом контенту
+  setTimeout(() => {
+    // Показуємо контент з анімацією
+    content.style.display = 'flex'
+
+    // Додаємо класи для анімації
+    preloader.classList.add('fade-out') // Анімація зникнення прелоадера
+    content.classList.add('fade-in') // Анімація появи контенту
+
+    // Приховуємо прелоадер після завершення анімації
+    setTimeout(() => {
+      preloader.style.display = 'none' // Приховуємо прелоадер
+    }, 500) // Затримка повинна відповідати тривалості анімації
+  }, 2000) // Затримка на 2 секунди
+})
