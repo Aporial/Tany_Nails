@@ -191,6 +191,7 @@ img {
 }
 
 .map {
+  cursor: default;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -360,18 +361,21 @@ img {
 }
 
 @media (max-width: 550px) {
-  /* .container {
-    margin: 10px 15px;
-  } */
+  .main_price ul li {
+    font-size: 16px;
+  }
   .example_container {
     columns: 2;
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 460px) {
   .price img {
     width: 100px;
     height: 100px;
+  }
+  .main_price ul li {
+    font-size: 14px;
   }
   .map iframe {
     width: 250px;
