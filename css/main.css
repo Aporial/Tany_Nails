@@ -289,6 +289,12 @@ img {
   opacity: 1;
 }
 
+.logo_anim {
+  max-width: 125px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
 /* Пульсуючий елемент */
 .pulsating-logo {
   animation: pulsate 1.5s ease-in-out infinite; /* Анімація пульсації */
