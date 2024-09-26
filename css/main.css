@@ -30,6 +30,10 @@ a {
   color: white;
 }
 
+img {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .no-scroll {
   overflow: hidden; /* Забороняє прокручування */
   height: 100vh; /* Задає висоту body */
@@ -125,6 +129,48 @@ a {
   list-style: none;
 }
 
+.main_price {
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: auto;
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 15px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.main_price ul {
+  list-style: none;
+  font-size: 20px;
+}
+
+.main_price h3 {
+  text-align: center;
+  margin: 8px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 5px;
+}
+
+.price img {
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
 .time_text {
   cursor: default;
   display: flex;
@@ -144,32 +190,29 @@ a {
   list-style: none;
 }
 
-.main_price {
-  cursor: default;
+.map {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 8px;
   width: auto;
-  max-width: 500px;
   margin: auto;
-  padding: 10px;
+  padding: 15px;
+  gap: 8px;
   border-radius: 15px;
   border: 3px solid #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-.main_price ul {
-  list-style: none;
+.map h2 {
+  text-align: center;
 }
 
-.main_price h3 {
-  text-align: center;
-  margin: 8px;
-}
-
-.dis {
-  text-align: center;
+.map iframe {
+  border: 0;
+  border-radius: 15px;
+  /* border: 3px solid #ffffff; */
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); */
 }
 
 .social_links {
@@ -192,10 +235,7 @@ a {
   /* text-align: center; */
 }
 
-.instagram,
-.tiktok,
-.telegram,
-.call {
+.social_links img {
   max-width: 70px;
 }
 
@@ -287,7 +327,7 @@ a {
   opacity: 1; /* Збільшуємо непрозорість для появи */
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1055px) {
   .menu-toggle {
     display: block;
   }
@@ -301,10 +341,11 @@ a {
   .nav_button {
     display: none;
   }
-  .instagram,
-  .tiktok,
-  .telegram,
-  .call {
+  .map iframe {
+    width: 300px;
+    height: 200px;
+  }
+  .social_links img {
     max-width: 70px;
   }
   .social_links p {
@@ -324,5 +365,33 @@ a {
   } */
   .example_container {
     columns: 2;
+  }
+}
+
+@media (max-width: 410px) {
+  .price img {
+    width: 100px;
+    height: 100px;
+  }
+  .map iframe {
+    width: 250px;
+    height: 150px;
+  }
+  .social_links img {
+    max-width: 60px;
+  }
+}
+
+@media (max-width: 370px) {
+  .price img {
+    width: 100px;
+    height: 100px;
+  }
+  .map iframe {
+    width: 200px;
+    height: 100px;
+  }
+  .social_links img {
+    max-width: 45px;
   }
 }

@@ -1,3 +1,9 @@
+window.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    closeFullscreen()
+  }
+})
+
 function openFullscreen(img) {
   const fullscreenContainer = document.getElementById('fullscreen-container')
   const fullscreenImage = document.getElementById('fullscreen-image')
@@ -29,9 +35,19 @@ function closeFullscreen() {
 // Меню для мобільної версії
 
 function toggleMenu() {
+  document.getElementById('mobile-menu').addEventListener('click', (event) => {
+    if (event.target === event.currentTarget) {
+      toggleMenu()
+    }
+  })
   const menu = document.getElementById('mobile-menu')
-  menu.classList.toggle('show') // Додаємо/видаляємо клас show
-  document.body.classList.add('no-scroll') // Додаємо клас для блокування прокручування
+  const isVisible = menu.classList.toggle('show') // Додаємо/видаляємо клас show
+  // Додаємо/видаляємо клас для блокування прокручування
+  if (isVisible) {
+    document.body.classList.add('no-scroll')
+  } else {
+    document.body.classList.remove('no-scroll')
+  }
 }
 
 // Додаємо обробник подій для закриття меню при натисканні на пункт
