@@ -7,9 +7,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Сховає горизонтальний скрол */
 }
 
 body {
+  overflow-x: hidden; /* Сховає горизонтальний скрол */
+  box-sizing: border-box;
   height: 100vh;
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
