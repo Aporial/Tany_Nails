@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
 
 html {
@@ -14,12 +13,7 @@ body {
   height: 100vh;
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
-  /* background-color: #ff6666; */
-  /* background: radial-gradient(circle, #fdce3b, #f2a301); */
-  /* background: radial-gradient(circle, #ffcc66, #ff6666); */
-  /* background: radial-gradient(circle, #ff6666, #ffcc66); */
-  /* background-image: url(/src/background.svg); */
-  background-image: url(/src/chess.svg);
+  background-image: url(/src/background.webp);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -101,6 +95,7 @@ img {
   border-radius: 15px;
   border: 3px solid #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(165, 165, 165, 0.5); */
 }
 
 .main_tita img {
@@ -124,10 +119,17 @@ img {
   border-radius: 15px;
   border: 3px solid #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(165, 165, 165, 0.5); */
 }
 
 .main_text ul {
   list-style: none;
+}
+
+.main_price img {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 15px;
 }
 
 .main_price {
@@ -137,12 +139,13 @@ img {
   align-items: center;
   gap: 8px;
   width: auto;
-  max-width: 500px;
+  /* max-width: 500px; */
   margin: auto;
   padding: 10px;
   border-radius: 15px;
   border: 3px solid #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(165, 165, 165, 0.5); */
 }
 
 .main_price ul {
@@ -185,6 +188,7 @@ img {
   border-radius: 15px;
   border: 3px solid #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(165, 165, 165, 0.5); */
 }
 
 .time_text ul {
@@ -204,6 +208,7 @@ img {
   border-radius: 15px;
   border: 3px solid #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(165, 165, 165, 0.5); */
 }
 
 .map h2 {
@@ -227,6 +232,7 @@ img {
   border-radius: 15px;
   border: 3px solid #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(165, 165, 165, 0.5); */
 }
 
 .social_links a {
