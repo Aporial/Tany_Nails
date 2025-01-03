@@ -13,7 +13,7 @@ body {
   height: 100vh;
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
-  background-image: url(/src/background.webp);
+  background-image: url(/src/background.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
